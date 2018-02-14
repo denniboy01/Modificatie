@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "power=0": { "model": "solar_panel" },
+        "power=1": { "model": "solar_panel" },
+        "power=2": { "model": "solar_panel" },
+        "power=3": { "model": "solar_panel" },
+        "power=4": { "model": "solar_panel" },
+        "power=5": { "model": "solar_panel" },
+        "power=6": { "model": "solar_panel" },
+        "power=7": { "model": "solar_panel" },
+        "power=8": { "model": "solar_panel" },
+        "power=9": { "model": "solar_panel" },
+        "power=10": { "model": "solar_panel" },
+        "power=11": { "model": "solar_panel" },
+        "power=12": { "model": "solar_panel" },
+        "power=13": { "model": "solar_panel" },
+        "power=14": { "model": "solar_panel" },
+        "power=15": { "model": "solar_panel" }
+    }
+}
