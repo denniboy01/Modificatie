@@ -3,6 +3,9 @@ package net.minecraft.block;
 import java.util.List;
 import java.util.Random;
 import javax.annotation.Nullable;
+
+import com.drago2809.ModNaam.items.ModItems;
+
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
@@ -29,7 +32,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockSolarPanel extends BlockContainer
 {
-    public static final PropertyInteger POWER = PropertyInteger.create("POWER", 0, 15);
+    public static final PropertyInteger POWER = PropertyInteger.create("power", 0, 15);
     protected static final AxisAlignedBB SOLAR_PANEL_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.375D, 1.0D);
     private final boolean inverted;
 
@@ -38,7 +41,7 @@ public class BlockSolarPanel extends BlockContainer
         super(Material.WOOD);
         this.inverted = inverted;
         this.setDefaultState(this.blockState.getBaseState().withProperty(POWER, Integer.valueOf(0)));
-        this.setCreativeTab(CreativeTabs.MOD);
+        this.setCreativeTab(ModItems.tabModNaam);
         this.setHardness(0.2F);
         this.setSoundType(SoundType.WOOD);
         this.setUnlocalizedName("solarPanel");
@@ -49,12 +52,12 @@ public class BlockSolarPanel extends BlockContainer
         return SOLAR_PANEL_AABB;
     }
 
-    public int getWeakPOWER(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+    public int getWeakPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
     {
         return ((Integer)blockState.getValue(POWER)).intValue();
     }
 
-    public void updatePOWER(World worldIn, BlockPos pos)
+    public void updatePower(World worldIn, BlockPos pos)
     {
         if (!worldIn.provider.getHasNoSky())
         {
@@ -96,12 +99,12 @@ public class BlockSolarPanel extends BlockContainer
                 if (this.inverted)
                 {
                     worldIn.setBlockState(pos, Blocks.SOLAR_PANEL.getDefaultState().withProperty(POWER, state.getValue(POWER)), 4);
-                    Blocks.SOLAR_PANEL.updatePOWER(worldIn, pos);
+                    Blocks.SOLAR_PANEL.updatePower(worldIn, pos);
                 }
                 else
                 {
                     worldIn.setBlockState(pos, Blocks.SOLAR_PANEL_INVERTED.getDefaultState().withProperty(POWER, state.getValue(POWER)), 4);
-                    Blocks.SOLAR_PANEL_INVERTED.updatePOWER(worldIn, pos);
+                    Blocks.SOLAR_PANEL_INVERTED.updatePower(worldIn, pos);
                 }
 
                 return true;
@@ -150,9 +153,9 @@ public class BlockSolarPanel extends BlockContainer
     }
 
     /**
-     * Can this block provide POWER. Only wire currently seems to have this change based on its state.
+     * Can this block provide power. Only wire currently seems to have this change based on its state.
      */
-    public boolean canProvidePOWER(IBlockState state)
+    public boolean canProvidePower(IBlockState state)
     {
         return true;
     }

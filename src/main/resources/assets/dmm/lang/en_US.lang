@@ -1,0 +1,57 @@
+item.copper_ingot.name=Copper Ingot
+item.silicon.name=Silicon
+item.lithium_ingot.name=Lithium Ingot
+item.aluminum.name=Aluminum
+item.steel_ingot.name=Steel Ingot
+
+item.iron_plate.name=Iron Plate
+item.diamond_plate.name=Diamond Plate
+item.wooden_plate.name=Wooden Plate
+item.copper_plate.name=Copper Plate
+item.steel_plate.name=Steel Plate
+item.aluminum_plate.name=Aluminum Plate
+item.silicon_plate.name=Silicon Plate
+
+item.iron_gear.name=Iron Gear
+item.diamond_gear.name=Diamond Gear
+item.steel_gear.name=Steel Gear
+
+item.battery.name=Battery
+item.electricity.name=Electricity
+
+item.compressor_bottom.name=Compressor Bottom
+item.compressor_top.name=Compressor Top
+item.compressor_basis_diamond_gear.name=Compressor Basis tier 3
+item.compressor_basis_iron_gear.name=Compressor Basis tier 1
+item.compressor_basis_steel_gear.name=Compressor Basis tier 2
+
+item.hammer.name=Hammer
+item.wrench.name=Wrench
+
+
+tile.copper_ore.name=Copper Ore
+tile.silicon_ore.name=Silicon Ore
+tile.aluminum_ore.name=Aluminum Ore
+tile.lithium_ore.name=Lithium Ore
+
+tile.copper_block.name=Copper Block
+tile.silicon_block.name=Silicon Block
+tile.steel_block.name=Steel Block
+tile.aluminum_block.name=Aluminum Block
+tile.lithium_block.name=Lithium Block
+
+
+itemGroup.EnergyTech=Energy Tech
+
+
+tile.naam_blok.name=Naam Blok
+item.naam_voorwerp.name=Naam Voorwerp
+
+item.tutorial_sword.name=Tutorial Sword
+item.tutorial_spade.name=Tutorial Spade
+item.tutorial_hoe.name=Tutorial Hoe
+item.tutorial_axe.name=Tutorial Axe
+item.tutorial_pickaxe.name=Tutorial Pickaxe
+item.mom_sword.name=Mom Sword
+tile.tutorial_block.name=Tutorial Block
+tile.tutorial_multi_ore.name=Tutorial Multi Ore

@@ -2,6 +2,8 @@ package net.minecraft.creativetab;
 
 import java.util.List;
 
+import com.drago2809.ModNaam.items.ModItems;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.enchantment.Enchantment;
@@ -43,7 +45,7 @@ public abstract class CreativeTabs
         @SideOnly(Side.CLIENT)
         public Item getTabIconItem()
         {
-            return Items.REDSTONE;
+            return Items.REPEATER;
         }
     };
     public static final CreativeTabs TRANSPORTATION = new CreativeTabs(3, "transportation")
@@ -108,14 +110,6 @@ public abstract class CreativeTabs
         public Item getTabIconItem()
         {
             return Items.STICK;
-        }
-    };
-    public static final CreativeTabs MOD = new CreativeTabs(12, "modificatie")
-    {
-        @SideOnly(Side.CLIENT)
-        public Item getTabIconItem()
-        {
-            return Item.getItemFromBlock(Blocks.SOLAR_PANEL);
         }
     };
     public static final CreativeTabs INVENTORY = (new CreativeTabs(11, "inventory")

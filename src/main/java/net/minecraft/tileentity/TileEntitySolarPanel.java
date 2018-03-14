@@ -16,7 +16,7 @@ public class TileEntitySolarPanel extends TileEntity implements ITickable
 
             if (this.blockType instanceof BlockSolarPanel)
             {
-                ((BlockSolarPanel)this.blockType).updatePOWER(this.worldObj, this.pos);
+                ((BlockSolarPanel)this.blockType).updatePower(this.worldObj, this.pos);
             }
         }
     }

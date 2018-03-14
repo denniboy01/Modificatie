@@ -1,0 +1,6 @@
+{
+    "parent": "dmm:block/electricity_side_alt",
+    "textures": {
+        "line": "dmm:blocks/electricity_line0"
+    }
+}

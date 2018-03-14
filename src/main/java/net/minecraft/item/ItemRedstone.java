@@ -1,5 +1,7 @@
 package net.minecraft.item;
 
+import com.drago2809.ModNaam.items.ModItems;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -14,7 +16,7 @@ public class ItemRedstone extends Item
 {
     public ItemRedstone()
     {
-        this.setCreativeTab(CreativeTabs.REDSTONE);
+        this.setCreativeTab(ModItems.tabModNaam);
     }
 
     /**
